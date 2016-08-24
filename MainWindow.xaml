@@ -11,23 +11,19 @@
         Background="Transparent"
         Opacity="1"
         AllowsTransparency="True"
-        Title="MainWindow" Height="300" Width="300"
+        Title="MainWindow" 
+        Height="300" 
+        Width="300"
         WindowStartupLocation="CenterScreen"
-        TextOptions.TextRenderingMode="Auto"
         TextOptions.TextFormattingMode="Display">
     
     <Grid ShowGridLines="True">
         
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-
         <Border Background="Black" Opacity="0.01" />
 
         <TextBlock Margin="10" Foreground="White" TextWrapping="Wrap" Text="Non draggable area" VerticalAlignment="Top" HorizontalAlignment="Center"  />
 
         <Grid  Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Height="150">
-
             <Border local:Behaviors.IsDragArea="True" Cursor="SizeAll" Background="Blue" Opacity="1"  >
                 <TextBlock Foreground="White" TextWrapping="Wrap" Text="Draggable area" VerticalAlignment="Center" HorizontalAlignment="Center"  />
             </Border>
@@ -40,6 +36,7 @@
         <Border local:Behaviors.IsDragArea="True"  Cursor="SizeAll" Background="Purple" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="80" Height="30" >
             <TextBlock FontSize="10" Foreground="White" TextWrapping="Wrap" Text="Draggable area" VerticalAlignment="Center" HorizontalAlignment="Center"  />
         </Border>
-
+    
     </Grid>
+    
 </Window>
